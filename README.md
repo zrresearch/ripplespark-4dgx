@@ -63,6 +63,12 @@ start takes 20 to 60 seconds once the weights are in the page cache.
 
 To make the pack yourself: `scripts/quantise.sh 5.0` (about 6 h on one GB10).
 
+A second conversion with the same settings is at
+[umzcio/Ripple-65B-Preview-exl3-5.0bpw](https://huggingface.co/umzcio/Ripple-65B-Preview-exl3-5.0bpw); it measures
+slightly further from BF16 than the default pack (perplexity 9.293 against 9.269). To use it, set
+`PACK_REPO=umzcio/Ripple-65B-Preview-exl3-5.0bpw` and `PACK_REV=443b2be98756ebf2850eb25cc4842e75d198d33c` in
+`scripts/local.sh`.
+
 ## Speed
 
 5.0 bpw pack, draft model on unless marked, tokens per second.
