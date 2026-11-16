@@ -13,9 +13,9 @@ This is [ajensenwaud/ripplespark-2dgx](https://github.com/ajensenwaud/ripplespar
 | Start fix | A Spark that had never served Ripple had no folder for its GPU lock and read as busy |
 | Engine changes | TensorFold patches 0011-0015: prompt reading about 2x on four Sparks and 1.5x on two; shared decode rounds that scale to 16 streams |
 
-Two Sparks work as in the original recipe and get the engine changes too. The write-up, with the measurements,
-scripts and logs behind the numbers below, is in
-[zrresearch/ripple-65b-sparks](https://github.com/zrresearch/ripple-65b-sparks).
+Two Sparks work as in the original recipe and get the engine changes too. The write-up is
+[Ripple on Four Sparks](https://www.zrresearch.org/research/ripple-on-four-sparks); the measurements, scripts and logs
+behind the numbers below are in [zrresearch/ripple-65b-sparks](https://github.com/zrresearch/ripple-65b-sparks).
 
 ## Running it
 
