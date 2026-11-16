@@ -1,3 +1,8 @@
 # Copy to scripts/local.sh (not tracked) and fill in your own values.
+# Two Sparks:
 WORKER=user@192.0.2.2      # rank 1: ssh target over the CX7 link
 MASTER=192.0.2.1           # rank 0's CX7 address
+# Four Sparks on a switch (instead of WORKER):
+# WORKERS="user@192.0.2.2 user@192.0.2.3 user@192.0.2.4"   # ranks 1-3, in order
+# NCCL_GID=5                 # the switch's RoCE v2 IPv4 GID index (3 on a direct cable)
+# RANK_HCAS="- mlx5_0,mlx5_2 - -"   # per rank, only for a Spark whose RoCE devices are named otherwise
